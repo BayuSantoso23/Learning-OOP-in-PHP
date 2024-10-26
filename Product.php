@@ -8,7 +8,7 @@ class product{
            $price = "Rp. 12.000.XXX";
 
     // Method (Function in class)
-    public function getLabel(){
+    public function getLabel(): string{
         return "$this->title, $this->category, $this->brands";
     }
 
@@ -23,7 +23,9 @@ var_dump($product1);
 $product2 = new product();
 $product2->title = "Lenovo Ideapad";
 $product2->brands = "Lenovo";
-$product2->User = "user1";
+
+// Count as Making New Variable 
+// $product2->user = "user1";
 var_dump($product2);
 
 $product3 = new product();
